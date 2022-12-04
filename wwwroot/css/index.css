@@ -43,8 +43,7 @@
     background-color: #5F8D4E;
     left: 0; top: 0;
     z-index: -1;
-    transform: skew(30deg);
-    box-shadow: 30px 0px 0px black;
+
 }
 
 .right-ctn button img{

@@ -1,5 +1,5 @@
 ﻿#info{
-    height: 100vh;
+    height: auto;
     display: flex;
 }
 
@@ -7,7 +7,14 @@
     font-weight: bold;
 }
 
-#info .right,  #info .left{
+#info .right-ctn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#info .right, #info .left {
     width: 50%;
 }
 
@@ -16,51 +23,67 @@
     display: flex;
     justify-content: center;
     align-items: start;
-    height: 50%;
 }
 
 #info .right-ctn img{
     width: 200px;
     height: 200px;
+
 }
 
     #info > div.right > div > img:nth-child(1) {
         padding: 10px;
         background-color: #285430;
-        margin: 10px;
-        position: relative;
-        top: 80%;
-        left: 35%;
+        margin: 1rem auto;
         border-radius: 50%;
     }
 
     #info > div.right > div > img:nth-child(2) {
         padding: 10px;
         background-color: #285430;
-        margin: 10px;
-        position: relative;
-        top: 30%;
-        left: 20%;
+        margin: 1rem auto;
         border-radius: 50%;
     }
 
     #info > div.right > div > img:nth-child(3) {
         padding: 10px;
         background-color: #285430;
-        margin: 10px;
-        position: relative;
-        top: 80%;
-        left: 5%;
+        margin: 1rem auto;
         border-radius: 50%;
     }
 
     #info > div.left{
         display: flex;
         flex-direction:column;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     #info > div.left h2{
         font-size: 64px;
     }
 
+    #info > div.left > ul{
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-size: 24px;
+        list-style: none;
+        margin: 5rem 2rem 5rem 0rem;
+    }
+
+        #info > div.left > ul > li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 1rem 0;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid black;
+        }
+
+        #info > div.left > ul > li img{
+            height: 100px;
+        }
+
+        #info .left h2{
+            text-align: left;
+        }
